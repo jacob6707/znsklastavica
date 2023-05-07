@@ -144,7 +144,7 @@ textarea {
 
 .igraci {
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
   align-items: stretch;
   gap: 1rem;
 }
