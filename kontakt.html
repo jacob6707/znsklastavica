@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kontakt</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>Ženski seoski nogometni klub Lastavica</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="klub.html">O klubu</a></li>
+          <li><a href="momcad.html">Momčad</a></li>
+          <li><a href="#">Galerija</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Kontaktirajte nas</h2>
+        <form
+          action="mailto:info@znklastavica.hr"
+          method="post"
+          class="contact"
+        >
+          <label for="ime">Ime:</label>
+          <input
+            type="text"
+            id="ime"
+            name="ime"
+            placeholder="Ime..."
+            required
+          />
+
+          <label for="email">Email adresa:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="E-mail..."
+            required
+          />
+
+          <label for="poruka">Poruka:</label>
+          <textarea
+            id="poruka"
+            name="poruka"
+            placeholder="Napiši poruku..."
+            required
+            style="height: 200px"
+          ></textarea>
+
+          <button type="submit">Pošalji</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; ŽNSK Lastavica 2023. Sva prava pridržana.</p>
+    </footer>
+  </body>
+</html>
