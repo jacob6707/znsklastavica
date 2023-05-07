@@ -1,0 +1,86 @@
+@import
+url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+
+header {
+	background-color: #003366;
+	color: white;
+	padding: 20px;
+}
+body{
+	font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+header h1 {
+	margin: 0;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #FFA500;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 30px;
+}
+
+section h2 {
+	margin-top: 0;
+}
+
+article {
+	border: 1px solid #DDD;
+	padding: 20px;
+}
+
+article h3 {
+	margin-top: 0;
+}
+
+article p {
+	margin-top: 0;
+}
+
+.button {
+	display: inline-block;
+	background-color: #FFA500;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-top: 10px;
+}
+
+.button:hover {
+	background-color: #FF8C00;
+}
+
+footer {
+	background-color: #003366;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
