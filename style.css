@@ -7,6 +7,7 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
+  background-color: #eeeeee;
 }
 
 body::after {
@@ -22,6 +23,39 @@ header.main-header {
   align-items: center;
   color: white;
   padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #ffa500;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  display: inline-block;
+}
+
+.logo h1 {
+  display: inline-block;
+  margin: 0;
+}
+
+.hamburger {
+  display: none;
+  color: white;
+  padding: 10px;
+}
+
+.hamburger:hover {
+  color: #ffa500;
 }
 
 .main-header h1 {
@@ -47,6 +81,52 @@ header.main-header {
 }
 
 .main-nav a:hover {
+  color: #ffa500;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .main-nav.open {
+    display: block;
+    margin: 1rem 0 0 0;
+  }
+
+  header.main-header {
+    display: block;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .main-nav ul {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+
+  .main-nav a {
+    display: block;
+    padding: 1rem;
+  }
+
+  .main-nav li {
+    display: block;
+    text-align: center;
+  }
+}
+
+a.active {
   color: #ffa500;
 }
 
@@ -78,6 +158,28 @@ article h3 {
 
 article p {
   margin-top: 0;
+}
+
+.sources {
+  margin-top: 2rem;
+}
+
+.sources a {
+  color: black;
+  text-decoration: none;
+}
+
+.sources a:hover {
+  color: cornflowerblue;
+}
+
+img.p-img {
+  height: 8rem;
+  width: auto;
+  border: 4px solid #ddd;
+  border-radius: 12px;
+  float: right;
+  margin: 0 0 0 1rem;
 }
 
 .button {
@@ -149,6 +251,22 @@ textarea {
   gap: 1rem;
 }
 
+@media (max-width: 700px) {
+  .igraci {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  .igrac {
+    display: block;
+    margin: 0 0 1rem;
+  }
+
+  .igrac:last-child {
+    margin: 0;
+  }
+}
+
 .igrac {
   flex: 1 1 0;
   display: inline-block;
@@ -165,6 +283,14 @@ textarea {
   border-radius: 50%;
   float: right;
 }
+@media (max-width: 260px) {
+  .igrac img {
+    margin: 0;
+  }
+  main {
+    padding: 0;
+  }
+}
 
 .igrac h3,
 p {
@@ -178,4 +304,23 @@ p {
 .igrac p {
   text-align: justify;
   hyphens: auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-grid > img {
+  width: 100%;
+  border: 4px solid #ddd;
+  border-radius: 12px;
+}
+
+video {
+  width: 100%;
+  border: 4px solid #ddd;
+  border-radius: 12px;
 }
