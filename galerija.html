@@ -5,17 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>ŽSNK Lastavica - O klubu</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon.ico" />
+    <script
+      src="https://kit.fontawesome.com/ee49ee0006.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="app.js" defer></script>
+    <title>ŽSNK Lastavica - Galerija</title>
   </head>
   <body>
     <header class="main-header">
-      <h1>Ženski seoski nogometni klub Lastavica</h1>
-      <nav class="main-nav">
+      <div class="top">
+        <a href="index.html" class="logo"
+          ><img src="images/logo.ico" alt="logo" />
+          <h1>Lastavica</h1></a
+        >
+        <a href="javascript:void(0);" class="hamburger" onclick="toggleNav()"
+          ><i class="fa-solid fa-bars fa-lg"></i
+        ></a>
+      </div>
+      <nav class="main-nav" id="main-nav">
         <ul>
-          <li><a href="index.html">Početna</a></li>
+          <li><a href="index.html" class="active">Početna</a></li>
           <li><a href="klub.html">O klubu</a></li>
           <li><a href="momcad.html">Momčad</a></li>
-          <li><a href="galerija.html" class="active">Galerija</a></li>
+          <li><a href="galerija.html">Galerija</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
